@@ -1,29 +1,46 @@
 import React from "react";
 import { BsChevronUp, BsChevronDown } from "react-icons/bs";
 import { useDispatch } from "react-redux";
-import { removeItem } from "../control/cartSlice";
+import { removeItem, increase, decrease } from "../control/cartSlice";
 
-function CourseItem  ({ id, title, price, img, quantity }) {
+function CourseItem({ id, title, price, img, quantity }) {
   const dispatch = useDispatch();
   return (
     <div className="cartItem">
-      <img src={img} />
+      <img src={img} alt='' />
       <div className="cartInfo">
         <h4>{title}</h4>
         <h4>{price} TL</h4>
-        <div>
+        <div className="buttonDiv">
           <button className="cartQuantityButton">
-            <BsChevronUp />
+            <BsChevronUp
+              className="firstButton"
+              onClick={() => {
+                dispatch(increase(id));
+              }}
+            />
           </button>
           <p className="cartQuantity">{quantity}</p>
           <button className="cartQuantityButton">
-            <BsChevronDown />
+            <BsChevronDown
+              className="secondButton"
+              onClick={() => {
+                dispatch(decrease(id));
+              }}
+            />
           </button>
         </div>
-        <button className="cartDeleteButton" onClick={()=>{dispatch(removeItem(id))}}>Sil</button>
+        <button
+          className="cartDeleteButton"
+          onClick={() => {
+            dispatch(removeItem(id));
+          }}
+        >
+          Sil
+        </button>
       </div>
     </div>
   );
-};
+}
 
 export default CourseItem;

@@ -1,63 +1,91 @@
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: blue;
-    color: white;
-    align-items: center;
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: orange;
+  color: white;
+  align-items: center;
 }
 
-.navDiv{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
+.navDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
 }
-.navDiv p{
-    background-color: white;
-    color: black;
-    padding: 5px;
-    text-align: center;
-    border-radius: 50%;
-    font-weight: bold;
+.navDiv p {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+.cart {
+  text-align: center;
+}
+.cart h4 {
+  font-size: x-large;
+}
+.cartQuantity {
+  font-size: x-large;
+}
+.clearButton {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: orange;
+  color: white;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 150px;
+}
+.cartItem img {
+  width: 800px;
+  height: 600px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.cartInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cartInfo h4 {
+  font-size: x-large;
+}
+.buttonDiv button {
+  font-size: x-large;
+  font-weight: bold;
+  cursor: pointer;
+}
+.firstButton {
+  background-color: green;
+  border-radius: 50%;
+  color: white;
+}
 
-}
-.cart{
-    text-align: center;
-   
-}
-.clearButton{
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    background-color: blue;
-    color: white;
-    margin: 0 20px;
-    cursor: pointer;
-}
-.cartItem{
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 150px;
-}
-.cartInfo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.secondButton {
+  background-color: red;
+  border-radius: 50%;
+  color: white;
 }
 
-.cartQuantityButton{
-    border: none;
-    background-color: white;
+.cartQuantityButton {
+  border: none;
+  background-color: white;
 }
-.cartDeleteButton{
-    padding: 10px;
-    width: 60px;
-    border: none;
-    border-radius: 10px;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    margin-top: 50px;
+.cartDeleteButton {
+  padding: 10px;
+  width: 60px;
+  border: none;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  margin-top: 50px;
 }
-

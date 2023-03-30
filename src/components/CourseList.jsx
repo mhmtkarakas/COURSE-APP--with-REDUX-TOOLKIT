@@ -33,9 +33,10 @@ function CourseList() {
                 Toplam Tutar <span>{total} TL</span>
               </h4>
             </div>
-            <button 
-            onClick={() => dispatch(clearCart())} 
-            className="clearButton" >
+            <button
+              onClick={() => dispatch(clearCart())}
+              className="clearButton"
+            >
               Temizle
             </button>
           </footer>
